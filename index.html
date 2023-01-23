@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="top.css">
+            <link rel="stylesheet" href="side-box.css">
+            <link rel="stylesheet" href="light-dark-modes.css">
+            <link rel="stylesheet" href="side-bar.css">
+        </head>
+
+    <title>Black Holes</title>
+
+<body>
+
+    <div id="wrapper">
+        <div id="content">
+            <div> 
+                <header><h1  id="what">Black Holes</h1></header>
+
+            </div>
+        
+            <div>
+                <h3 >What is a Black Hole?</h3>
+                <p>A black hole is a place in space where gravity pulls so much that even light can not get out.<br> 
+                The gravity is so strong because matter has been squeezed into a tiny space.
+                This can happen<br>when a star (3 or more times bigger than our Sun) is dying.
+                Black holes are made of matter<br>packed so tightly that gravity overwhelms all other forces.<br>
+                </p>
+            </div>
+
+            <div>
+                <h3 id="form">How does a Black hole form?</h3>
+                    <p>
+                        Most black holes form from the remnants of a large star that dies in a supernova explosion.<br>
+                        (Smaller stars become dense neutron stars, which are not massive enough to trap light.)<br>
+                        If the total mass of the star is large enough (about three times the mass of the Sun), <br>
+                        it can be proven theoretically that no force can keep the star from collapsing under the influence of gravity.
+                        
+                        <figure>
+                            <img src="zformation-of-black-hole.jpg" alt="image" height="200" width="400">
+                            <figcaption>Formation of a black hole.</figcaption>
+                        </figure>
+                    </p>
+            </div>
+
+            <div>
+                <h3 id="how">How big can Black Holes be?</h3>
+                <p>
+                    A black hole can be bigger than our solar system or tiny as an atom.
+                    Stellar-mass black holes are<br>
+                    typically in the range of 10 to 100 solar masses, while the supermassive black holes at the centers of galaxies<br>
+                    can be millions or even billions of solar masses.The supermassive black hole at the center of the Milky Way,<br>
+                    Sagittarius A*, is 4.3 million solar masses.
+                </p>
+            </div>
+            <div>
+                <h3 id="LoseMass">How does a Black Hole lose mass?</h3>
+                <p>
+                    Hawking Radiation - Quantum particles that appear near the event horizon and are able to escape it,<br>
+                    stealing the Black Hole's mass away. Over eons the radiation gets stronger and the Black Hole evaporates<br>
+                    until it disappears in a flash.
+                    
+                    <figure>
+                        <img src="zhawking-radiation.png" alt="image" height="200" width="400">
+                        <figcaption>Hawking Radiaton (Kurzgesagt)</figcaption>
+                    </figure>
+                </p>
+            </div>
+            <div id="dictionary">
+                <fieldset>
+                    <legend><h3>Dictionary</h3></legend>
+                    <ul>
+                        <li>Solar Mass - The mass of the Sun.</li>
+                        <br>
+                        <li>Neutron Star -  Any of a class of extremely dense, compact stars composed mostly of neutrons.</li>
+                    </ul>
+                </fieldset>
+            </div>
+        </div> 
+    </div>
+
+
+   
+    
+    
+    
+   <div class="top top-dark top-light stack-top" id="header" aria-hidden="true">
+        <span class="buttons">
+            <button onclick="darkMode()">Dark Theme</button>
+            <button onclick="lightMode()">Light Theme</button>
+        </span>
+            <span class="top-text">
+                <a href="https://discord.gg/FBaGqD53mr"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="discord" src="zdiscord.png">
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Made by Franki&nbsp;&nbsp;
+                <a href="https://www.youtube.com/channel/UCZxycOfEdXcxorCdt3xqqiQ"
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                <img class="youtube" src="youtube.png">
+                </a>   
+            </span>   
+    </div> 
+    <div class="side-box">
+        <ul >
+            <li><a href="#what">What is a Black Hole?</a></li>
+            <br>
+            <li><a href="#form">How does a Black hole form?</a></li>
+            <br>
+            <li><a href="#how">How big can Black Holes be?</a></li>
+            <br>
+            <li><a href="#LoseMass">How does a Black Hole lose mass?</a></li>
+            <br>
+            <li><a href="#dictionary">Dictionary</a></li>
+        </ul>
+    </div>
+ 
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.className = "dark-mode";
+            element.className = "side-box-dark";
+            element.getElementsByClassName("top-dark");
+            element.getElementsByClassName("dictionary-dark");
+            
+            const collection = document.getElementsByClassName("top-dark");
+            for (let i = 0; i < collection.length; i++) {
+            collection[i].style.backgroundColor = "black";
+            }
+        }
+
+        function lightMode() {
+            var element = document.body;
+            element.className = "light-mode";
+            element.getElementsByClassName("top-light");
+
+            const collection = document.getElementsByClassName("top-light");
+            for (let i = 0; i < collection.length; i++) {
+            collection[i].style.backgroundColor = "white";
+            }
+        }
+    </script>
+    
+                
+                
+
+        
+
+
+</body>
+</html>
